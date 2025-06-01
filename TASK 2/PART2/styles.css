@@ -1,0 +1,140 @@
+/* Base Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  background-image:url('apexlogo.png');
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  background-color: #327da27a;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-section input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.input-section button {
+  padding: 0.5rem;
+  background-color: #4c98af;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Task List - CSS Grid */
+.task-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Individual Task Item */
+.task-item {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background: rgb(255, 5, 5);
+}
+
+/* ------------------- */
+/*    MEDIA QUERIES */
+/* ------------------- */
+
+/* Small screens (phones) */
+@media (max-width: 599px) {
+  .input-section {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .task-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .input-section {
+    flex-direction: row;
+  }
+
+  .input-section input {
+    flex: 1;
+  }
+
+  .task-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 900px) {
+  .main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .input-section {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .input-section input {
+    flex: 1;
+  }
+
+  .task-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

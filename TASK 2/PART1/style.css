@@ -1,0 +1,66 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image:url('apexlogo.png');
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #032730;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
