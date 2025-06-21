@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(135deg, #87ceeb 0%, #f8ffae 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(apexlogo.png);
+}
+
+.weather-app {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #0002;
+  padding: 2.5em 2em 2em 2em;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5em;
+  color: #2196f3;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1.2em;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.7em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+button {
+  padding: 0.7em 1.2em;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1769aa;
+}
+
+#weatherResult {
+  margin-top: 1em;
+  font-size: 1.08em;
+}
+
+.weather-box {
+  padding: 1em 0;
+  border-radius: 8px;
+  background: #f1f8ff;
+  margin-top: 1em;
+}
+.weather-box img {
+  width: 72px;
+}
+.weather-box .temp {
+  font-size: 2em;
+  font-weight: 700;
+  color: #1769aa;
+}
+.weather-box .desc {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #444;
+}
